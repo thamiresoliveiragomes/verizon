@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?7mb8na');
+  src:  url('fonts/icomoon.eot?7mb8na#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?7mb8na') format('truetype'),
+    url('fonts/icomoon.woff?7mb8na') format('woff'),
+    url('fonts/icomoon.svg?7mb8na#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Azo Sans';
+  src: url('fonts/Rui\ Abreu\ -\ AzoSans-Medium.otf');
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+  content: "\e904";
+}
+.icon-arrow-left:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-menu:before {
+  content: "\e900";
+  color: #35363E;
+}
+.icon-search:before {
+  content: "\e901";
+  color: #35363E;
+}
+.icon-cart:before {
+  content: "\e902";
+  color: #35363E;
+}
+
+body {
+  font-family: 'Roboto';
+  font-style: normal;
+}
+
+.header {
+  height: 80px;
+  padding: 24px 28px 16px 24px;
+}
+
+.logo {
+  width: 180px;
+  height: 40px;
+}
+
+.icon-search:before, .icon-menu:before {
+  font-size: 26px;
+  margin-left: 30px;
+}
+
+.banner {
+  height: 80px;
+  background: linear-gradient(91.82deg, #35363E 27.66%, #D52B1E 86.25%);
+  padding: 29px 24px 23px;
+}
+
+.banner h1 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+  margin: 0;
+  margin-left: 34px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #DDDEE3;
+}
+
+.red-bar {
+  background: #D52B1E;
+  border-radius: 0px 5px 5px 0px;
+  width: 140px;
+  height: 8px;
+}
+
+.main {
+  margin: 40px 24px 160px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #000;
+}
+
+.subtitle, .text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000;
+}
+
+.subtitle {
+  margin-bottom: 38px;
+}
+
+.text {
+  margin-bottom: 24px;
+}
+
+label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #404149;
+  margin-bottom: 11px;
+}
+
+form {
+  margin-bottom: 64px;
+}
+
+input, select {
+  background: #EFEFF1;
+  border: none;
+  height: 48px;
+  padding: 16px 12px;
+  color: #404149;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+input::placeholder {
+  color: #94959D;
+}
+
+.pre-label {
+  font-family: 'Azo Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: #000;
+  margin: 24px 0;
+}
+
+footer {
+  height: 96px;
+  background: #FFFFFF;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+}
+
+.button-next {
+  height: 48px;
+  background: #1E1F27;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  border: none;
+  width: 100%;
+}
+
+.menu-list {
+  list-style-type: none;
+  margin: 0;
+}
+
+.menu-list li {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+  margin-right: 24px;
+}
+
+.error-nif {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #D52B1E;
+}
+
+@media screen and (min-width: 778px) {
+  .header {
+    height: 124px;
+    padding: 24px 160px;
+  }
+
+  .logo {
+    width: 340px;
+    height: 76px;
+  }
+
+  .icon-search:before, .icon-cart:before {
+    font-size: 20px;
+  }
+  
+  .banner {
+    height: 120px;
+    padding: 68px 168px 24px;
+  }
+
+  .red-bar {
+    width: 515px;
+  }
+
+  .main {
+    margin: 40px 160px 160px;
+  }
+
+  .subtitle {
+    margin-bottom: 40px;
+  }
+
+  .form-name, .form-docs {
+    width: 740px;
+  }
+
+  .form-doc-type, .form-doc-number, .form-nif, .form-cellphone, .form-phone, .form-email {
+    width: 360px;
+  }
+
+  footer {
+    padding-right: 160px;
+  }
+
+  .button-next {
+    width: auto;
+    padding: 0 40px;
+  }
+}
