@@ -199,7 +199,7 @@ footer {
   color: #D52B1E;
 }
 
-@media screen and (min-width: 778px) {
+@media screen and (min-width: 992px) {
   .header {
     height: 124px;
     padding: 24px 160px;
@@ -231,12 +231,17 @@ footer {
     margin-bottom: 40px;
   }
 
-  .form-name, .form-docs {
+  .form-name {
     width: 740px;
   }
 
   .form-doc-type, .form-doc-number, .form-nif, .form-cellphone, .form-phone, .form-email {
     width: 360px;
+    margin-right: 20px;
+  }
+
+  .form-email {
+    margin-right: 0
   }
 
   footer {
